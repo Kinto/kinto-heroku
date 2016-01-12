@@ -1,5 +1,1 @@
-pelican
-Markdown
-typogrify
-gunicorn
-static
+kinto[postgresql]

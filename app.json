@@ -1,41 +1,15 @@
 {
-  "name": "Pelican",
-  "description": "Host your static website with Pelican.",
+  "name": "Kinto",
+  "description": "Store, Sync, and Share",
   "keywords": [
-    "pelican",
-    "blog",
-    "website",
-    "static"
+    "kinto",
+    "storage",
+    "data",
+    "self-hosted"
   ],
-  "website": "https://github.com/getpelican/pelican-heroku",
-  "repository": "https://github.com/cyberdelia/pelican-heroku",
-  "logo": "https://avatars0.githubusercontent.com/u/2043492",
+  "website": "https://github.com/kinto/kinto-heroku",
+  "repository": "https://github.com/kinto/kinto-heroku",
+  "logo": "https://avatars0.githubusercontent.com/u/13413813",
   "scripts": {},
-  "env": {
-    "PELICAN_AUTHOR": {
-      "description": "The author name.",
-      "value": "",
-      "required": true
-    },
-    "PELICAN_SITENAME": {
-      "description": "Your site name.",
-      "value": "",
-      "required": true
-    },
-    "DEFAULT_PAGINATION": {
-      "description": "The maximum number of articles to include on a page.",
-      "value": 10,
-      "required": true
-    },
-    "GOOGLE_ANALYTICS": {
-      "description": "Your google analytics identifier to enable analytics on your site.",
-      "value": "",
-      "required": false
-    },
-    "DISQUS_SITENAME": {
-      "description": "Your disqus sitename identifier to add comments to your site.",
-      "value": "",
-      "required": false
-    }
-  }
+  "env": {}
 }
