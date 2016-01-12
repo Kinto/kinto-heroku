@@ -13,11 +13,6 @@ if __name__ == "__main__":
         raise ValueError("DATABASE_URL is not correctly defined: %s" %
                          database)
 
-    # Configure Kinto
-    os.putenv("KINTO_CACHE_URL", database)
-    os.putenv("KINTO_STORAGE_URL", database)
-    os.putenv("KINTO_PERMISSION_URL", database)
-
     app = loadapp('config:kinto.ini', relative_to='.')
 
     serve(app, host='0.0.0.0', port=port)
