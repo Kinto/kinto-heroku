@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+kinto --ini=kinto.ini --backend=postgresql init
