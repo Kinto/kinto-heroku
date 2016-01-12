@@ -7,10 +7,17 @@ from waitress import serve
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
 
-    raise ValueError(os.getenv("DATABASE_URL"))
-    os.setenv("KINTO_CACHE_URL", os.getenv("DATABASE_URL"))
-    os.setenv("KINTO_STORAGE_URL", os.getenv("DATABASE_URL"))
-    os.setenv("KINTO_PERMISSION_URL", os.getenv("DATABASE_URL"))
+    database = os.getenv("DATABASE_URL")
+
+    if not database:
+        raise ValueError("DATABASE_URL is not correctly defined: %s" %
+                         database)
+
+    # Configure Kinto
+    os.putenv("KINTO_CACHE_URL", database)
+    os.putenv("KINTO_STORAGE_URL", database)
+    os.putenv("KINTO_PERMISSION_URL", database)
+
     app = loadapp('config:kinto.ini', relative_to='.')
 
     serve(app, host='0.0.0.0', port=port)
