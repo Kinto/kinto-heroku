@@ -5,6 +5,4 @@ export KINTO_CACHE_URL="${DATABASE_URL}"
 export KINTO_STORAGE_URL="${DATABASE_URL}"
 export KINTO_PERMISSION_URL="${DATABASE_URL}"
 
-echo "${DATABASE_URL}" >2
-exit 1
 kinto --ini=kinto.ini migrate
