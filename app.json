@@ -8,7 +8,7 @@
     "self-hosted"
   ],
   "addons": [
-    "heroku-postgresql:dev"
+    "heroku-postgresql:hobby-dev"
   ],
   "website": "https://github.com/kinto/kinto-heroku",
   "repository": "https://github.com/kinto/kinto-heroku",
