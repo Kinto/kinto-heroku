@@ -1,1 +1,2 @@
-kinto[postgresql]
+kinto
+cliquet[postgresql]
