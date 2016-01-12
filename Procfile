@@ -1,1 +1,1 @@
-web: gunicorn kintoapp --log-file -
+web: ./runapp.py
