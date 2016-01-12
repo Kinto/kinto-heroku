@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-export KINTO_CACHE_URL="${DATABASE_URL}"
-export KINTO_STORAGE_URL="${DATABASE_URL}"
-export KINTO_PERMISSION_URL="${DATABASE_URL}"
-
-# kinto --ini=kinto.ini migrate
+source ./.profile.d/env.sh
+kinto --ini=kinto.ini migrate
