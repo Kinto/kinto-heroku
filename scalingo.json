@@ -1,0 +1,11 @@
+{
+  "name": "Kinto",
+  "description": "Store, Sync, and Share",
+  "addons": [
+    "scalingo-postgresql"
+  ],
+  "website": "https://github.com/kinto/kinto-heroku",
+  "repository": "https://github.com/kinto/kinto-heroku",
+  "logo": "https://avatars0.githubusercontent.com/u/13413813",
+  "env": {}
+}
