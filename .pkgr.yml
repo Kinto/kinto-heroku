@@ -1,0 +1,10 @@
+user: kinto
+group: kinto
+services:
+  - postgres:9.4
+targets:
+  ubuntu-14.04:
+  debian-7:
+  debian-8:
+  centos-7:
+  sles-12:
