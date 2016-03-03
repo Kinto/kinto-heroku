@@ -1,2 +1,4 @@
 kinto
-cliquet[postgresql]
+SQLAlchemy
+psycopg2>2.5
+zope.sqlalchemy
