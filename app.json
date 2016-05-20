@@ -14,5 +14,10 @@
   "repository": "https://github.com/kinto/kinto-heroku",
   "logo": "https://avatars0.githubusercontent.com/u/13413813",
   "scripts": {},
-  "env": {}
+  "env": {
+    "KINTO_USERID_HMAC_SECRET": {
+      "description": "The secret used to create the user ID from a username:password pair",
+      "generator": "secret"
+    }
+  }
 }
