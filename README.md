@@ -24,7 +24,7 @@ $ heroku login
 Then clone this repository and add you heroku app:
 
 ```
-$ git clone http://github.com/Kinto/kinto-heroku.git -depth=1 myapp
+$ git clone http://github.com/Kinto/kinto-heroku.git --depth=1 myapp
 $ cd myapp
 $ <Edit kinto.ini with your new settings>
 $ git commit -am "New setting"
