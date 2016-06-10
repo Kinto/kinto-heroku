@@ -32,4 +32,4 @@ $ heroku git:remote -a myapp
 $ git push -u heroku master
 ```
 
-You can also edit the ``requirenments.txt`` to add new dependencies / plugins.
+You can also edit the `requirements.txt` to add new dependencies / plugins.
