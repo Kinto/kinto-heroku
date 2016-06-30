@@ -15,7 +15,7 @@ $ heroku open
 
 ## How to upgrade / change configuration ?
 
-First of all use the heroku command to login:
+First of all use the [heroku command](https://toolbelt.heroku.com/) to login:
 
 ```
 $ heroku login
