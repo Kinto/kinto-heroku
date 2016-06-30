@@ -15,7 +15,7 @@ $ heroku open
 
 ## Updating your deployment config after using the deploy button.
 
-First of all use the heroku command to login:
+First of all use the [heroku command](https://toolbelt.heroku.com/) to login:
 
 ```
 $ heroku login
