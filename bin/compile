@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+# Run init just in case the file kinto.ini is not present (should not happen)
 kinto --ini=kinto.ini --backend=postgresql init
