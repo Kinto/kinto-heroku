@@ -1,4 +1,4 @@
-kinto
+kinto>=3.2.0
 SQLAlchemy
 psycopg2>2.5
 zope.sqlalchemy
