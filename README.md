@@ -6,10 +6,15 @@ Following the installation you should have a Kinto server available for you to u
 ## Installation
 
 ```
-$ git clone http://github.com/Kinto/kinto-heroku.git --depth=1 kinto-instance && cd kinto-instance
-$ heroku create && git push heroku master
+$ git clone http://github.com/Kinto/kinto-heroku.git kinto-instance && cd kinto-instance
+$ heroku apps:create kinto-instance
+$ heroku addons:create heroku-postgresql --app kinto-instance
+$ git remote set-url heroku git@heroku.com:kinto-instance.git
+$ git push heroku master
 $ heroku open
 ```
+
+_N.B: changing the url to ssh instead of https is required if you are facing a `HTTP 400 Bad Request` error on `git push heroku master`._ 
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
