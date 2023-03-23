@@ -13,6 +13,8 @@ if __name__ == "__main__":
         raise ValueError("DATABASE_URL is not correctly defined: %s" %
                          database)
 
+    os.environ["DATABASE_URL"] = database.replace("postgres://", "postgresql://")
+
     app = loadapp('config:kinto.ini', relative_to='.')
 
     serve(app, host='0.0.0.0', port=port)
