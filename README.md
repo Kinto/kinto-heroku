@@ -16,7 +16,7 @@ $ heroku open
 
 _N.B: changing the url to ssh instead of https is required if you are facing a `HTTP 400 Bad Request` error on `git push heroku master`._ 
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Kinto/kinto-heroku)
 
 ## How to upgrade / change configuration ?
 
